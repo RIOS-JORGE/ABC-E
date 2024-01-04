@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background-image: url("../img/img-header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.header nav ul li a{
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header nav ul li a:hover{
+    color: #6495ed;
+}
+
+.header h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.header h2{
+    font-size: 1rem;
+}
+
+.header h2::first-letter{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* seccion uno */
+
+.seccionUno .divABC-E p{
+    font-size: 3rem;
+    color: #6495ed;
+}
+
+/* seccion dos */
+
+.seccionDos-calidad{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/sep1.jpg");
+}
+
+/* seccion tres */
+
+/* seccion cuatro */
+
+.seccionCuatro-proyectos{
+    background-color: #eae4dc;
+}
+
+/* seccion seis */
+
+.seccionSeis-contacto a svg{
+    width: 3rem;
+    height: 3rem;
+}
+
+/* footer */
+
+footer{
+    background-color: #333333;
+    height: 6rem;
+}
+
+footer h3{
+    color: #aaaaaa;
+}
