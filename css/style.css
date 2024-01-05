@@ -88,3 +88,13 @@ footer{
 footer h3{
     color: #aaaaaa;
 }
+
+/* html servicios */
+
+.contenedor{
+    width: 100%;
+}
+
+.contenedor img{
+    width: 40%;
+}
