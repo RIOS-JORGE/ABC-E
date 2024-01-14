@@ -12,7 +12,6 @@
 /* header */
 
 .header{
-    width: 100vw;
     height: 100vh;
     color: #fff;
     background-image: url("../img/img-header.jpg");
@@ -140,7 +139,6 @@
 /* seccion dos */
 
 .seccionDos-calidad{
-    width: 100vw;
     height: 100vh;
     background-image: url("../img/sep1.jpg");
     background-attachment: fixed;
@@ -183,16 +181,16 @@
     text-align: center;
 }
 
-.seccionTres-servicios .titulo-servicios{
+.titulo{
     font-size: 2rem;
     margin-top: 5rem;
 }
 
-.seccionTres-servicios .enlace-mas{
+.enlace{
     color: #333333;
 }
 
-.seccionTres-servicios .enlace-mas:hover{
+.enlace:hover{
     color: #6495ed;
 }
 
@@ -223,7 +221,22 @@
 /* seccion cuatro */
 
 .seccionCuatro-proyectos{
+    
     background-color: #eae4dc;
+    text-align: center;
+}
+
+
+.seccionCuatro-proyectos div{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.seccionCuatro-proyectos div img{
+    width: 400px;
+    flex-grow: 1;
 }
 
 /* seccion seis */
