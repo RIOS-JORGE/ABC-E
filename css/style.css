@@ -357,7 +357,7 @@ footer h3{
         height: 0;
     }
     .texto-header h1{
-      font-size: 1rem;
+        font-size: 1rem;
     }
 
     .texto-header h2{
@@ -411,4 +411,4 @@ footer h3{
         position: inherit;
     }
 
-  }
+    }
