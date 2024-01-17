@@ -340,7 +340,7 @@ footer h3{
 
 /* medias querys */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 
     .navbar{
         flex-direction: column;
@@ -357,7 +357,8 @@ footer h3{
         height: 0;
     }
     .texto-header h1{
-        font-size: 1rem;
+        font-size: 2.5rem;
+        margin-top: 15rem;
     }
 
     .texto-header h2{
@@ -391,6 +392,7 @@ footer h3{
 
     .texto{
         width: auto;
+        padding: .5rem;
     }
     /* seccion cuatro */
 
@@ -401,7 +403,10 @@ footer h3{
     /* seccion cinco */
 
     .seccionCinco-clientes .div-logos{
-        gap: 5rem;
+        gap: 2rem;
+        padding: 1rem;
+        width: 100%;
+        margin-bottom: 3rem;
     }
 
     /* seccion seis */
@@ -409,6 +414,11 @@ footer h3{
     .seccionSeis-contacto .div-contactos{
         width: auto;
         position: inherit;
+        padding: 1rem;
+    }
+
+    .div-contactos p{
+        font-size: 1rem;
     }
 
     }
