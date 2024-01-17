@@ -383,6 +383,24 @@ footer h3{
 }
 
 
+/* html clientes */
+
+.contenedor-clientes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+.texto-clientes{
+    width: 70%;
+    color: #fff;
+    background-color: #333333;
+    padding: 2rem;
+    border: solid 1px #333333;
+    border-radius: 20px;
+}
+
 /* medias querys */
 
 @media only screen and (max-width: 500px) {
@@ -484,4 +502,19 @@ footer h3{
         width: 100%;
     }
 
+    /* html clientes */
+
+    .contenedor-clientes{
+        flex-direction: column;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .texto-clientes{
+        width: 90%;
+    }
+
+    .contenedor-clientes:nth-child(2n){
+        flex-direction: column-reverse;
+    }
     }
