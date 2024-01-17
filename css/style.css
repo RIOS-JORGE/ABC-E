@@ -353,6 +353,35 @@ footer h3{
     width: 70%;
 }
 
+/* html proyectos */
+
+.div-contenedor-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-proyectos{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    border: solid 1px #333333;
+    background-color: #fff;
+}
+
+.img-proyecto{
+    width: 100%;
+    height: 60%;
+    border-radius: 1rem 1rem 0 0;    
+}
+
+.texto-proyecto{
+    text-align: justify;
+    margin: 1rem;
+    padding: .5rem;
+}
+
 
 /* medias querys */
 
@@ -445,6 +474,13 @@ footer h3{
     }
 
     .contenedor-servicios div{
+        width: 100%;
+    }
+
+
+    /* html proyectos */
+
+    .contenedor-proyectos{
         width: 100%;
     }
 
