@@ -447,8 +447,12 @@ footer h3{
 
     /* seccion uno */
 
-    .seccionUno .divABC-E h2, .seccionUno .divABC-E p{
-        font-size: 2rem;
+    .seccionUno .divABC-E h2{
+        font-size: 6rem;
+    }
+
+    .seccionUno .divABC-E p{
+        font-size: 1.5rem;
     }
 
     .seccionUno .seccionUno-descripsion .div-contenedor-secionUno .div-span{
@@ -509,12 +513,17 @@ footer h3{
         flex-direction: column;
     }
 
+    .contenedor-servicios .img-Servicios{
+        width: 100%;
+    }
+
     .contenedor-servicios:nth-child(2n+1){
         flex-direction: column-reverse;
     }
 
     .contenedor-servicios div{
         width: 100%;
+        padding: 1rem;
     }
 
 
