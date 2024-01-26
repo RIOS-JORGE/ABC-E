@@ -27,18 +27,19 @@
     padding: 3rem 0;
 }
 
-.navbar ul{
+/* .navbar ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 60%;
     list-style: none;
-}
+} */
 
 .logo{
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: 500;
+    padding-left: 2rem;
 }
 
 .header nav ul li a{
@@ -303,7 +304,7 @@
 }
 
 .seccionSeis-contacto .div-contactos{
-    width: 40%;
+    width: 50%;
     margin: auto;
     border: #6495ed 1px solid;
     text-align: center;
@@ -419,9 +420,9 @@ footer h3{
 
 /* medias querys */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
 
-    .navbar{
+    /* .navbar{
         flex-direction: column;
         gap: 5rem;
     }
@@ -430,6 +431,15 @@ footer h3{
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+    } */
+
+    .navbar{
+        justify-content: space-between;
+        padding: 3rem 1rem;
+    }
+
+    .logo{
+        padding: 0;
     }
     
     .texto-header{
