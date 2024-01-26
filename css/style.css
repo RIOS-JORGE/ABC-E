@@ -247,17 +247,41 @@
 .img1{
     grid-area: img1;
 }
+
+.img1:hover{
+    filter:brightness(0.7);
+}
+
 .img2{
     grid-area: img2;
 }
+
+.img2:hover{
+    filter:brightness(0.7);
+}
+
 .img3{
     grid-area: img3;
 }
+
+.img3:hover{
+    filter:brightness(0.7);
+}
+
 .img4{
     grid-area: img4;
 }
+
+.img4:hover{
+    filter:brightness(0.7);
+}
+
 .img5{
     grid-area: img5;
+}
+
+.img5:hover{
+    filter:brightness(0.7);
 }
 
 /* seccion cinco */
@@ -394,12 +418,19 @@ footer h3{
     height: 60%;    
 }
 
+.img-proyecto:hover{
+    filter:brightness(0.7);
+}
+
 .texto-proyecto{
     text-align: justify;
     margin: 1rem;
     padding: .5rem;
 }
 
+.w-100{
+    padding: 1rem;
+}
 
 /* html clientes */
 
