@@ -361,12 +361,12 @@
 
 footer{
     background-color: #333333;
-    height: 6rem;
 }
 
 footer h3{
     color: #aaaaaa;
     padding: 40px;
+    margin-bottom: 0;
 }
 
 
