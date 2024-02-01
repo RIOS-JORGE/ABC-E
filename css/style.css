@@ -525,6 +525,9 @@ footer h3{
         display: block;
     }
 
+    .div-grid img{
+        margin-bottom: .5rem;
+    }
 
     /* seccion cinco */
 
