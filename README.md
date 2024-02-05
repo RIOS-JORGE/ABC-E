@@ -1,2 +1,2 @@
 Pagina en construcción 
-Link: https://shor00.github.io/ABC-E/
+link: https://rios-jorge.github.io/ABC-E/
