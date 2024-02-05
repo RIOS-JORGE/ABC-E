@@ -56,7 +56,7 @@
 .texto-header{
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 60%;
     justify-content: space-around;
     align-items: center;
     margin: 1rem;
@@ -450,6 +450,13 @@ footer h3{
 }
 
 /* medias querys */
+
+@media only screen and (max-width: 960px){
+    
+    .seccionUno{
+        height: 100%;
+    }
+}
 
 @media only screen and (max-width: 768px) {
 
