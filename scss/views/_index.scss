@@ -1,0 +1,81 @@
+.header{
+    height: 100vh;
+    color: $bg-100;
+    background-image: url("../img/img-header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+        & .navbar{
+            @include flex(null, space-around, center, wrap);
+            padding: 3rem 0;
+
+            & .logo{
+                font-size: 3rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                padding-left: 2rem;
+            }
+
+            & ul li a{
+                font-size: 1rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #fff;
+
+                &:hover{
+                    color: #6495ed;
+                }
+            }
+
+            
+        }
+
+        & .texto-header{
+            @include flex(column, space-around, center, null);
+            height: 60%;
+            margin: 1rem;
+
+            & h1{
+                font-size: clamp(1rem, 4vw + 1.25rem, 4rem);
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+            & h2{
+                font-size: 2rem;
+                width: 50%;
+                text-align: center;
+                font-weight: 400;
+
+                &::first-letter{
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                }
+            }
+
+            
+        }
+}
+
+/* seccion uno */
+
+.seccionUno{
+    @include flex(null, space-around, center, wrap);
+    height: 100vh;
+
+        & .divABC-E{
+            max-width: 1200px;
+
+            & h2{
+                font-size: 9rem;
+                color: $primary-200;
+                text-align: center;
+            }
+
+            & p{
+                font-size: 2rem;
+                text-align: center;
+                color: $primary-200;
+            }
+        }
+}
