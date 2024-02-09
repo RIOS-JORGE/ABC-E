@@ -1,3 +1,4 @@
+/*header*/ 
 .header{
     height: 100vh;
     color: $bg-100;
@@ -78,4 +79,77 @@
                 color: $primary-200;
             }
         }
+
+        & .seccionUno-descripsion{
+            width: 500px;
+
+            & .div-contenedor-seccionUno{
+                @include flex(null, space-around, center, null);
+
+                & .div-span span{
+                    font-size: 2rem;
+                    border-radius: 150%;
+                    border: solid 3px black;
+                    padding: 1% 10px;
+                    margin: 2rem;
+                }
+
+                & .div-info h3{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    margin: 1rem 0;
+                }
+
+                & .div-info p{
+                    margin: 1rem 0;
+                    font-weight: 300;
+                }
+            }
+        }
+}
+
+/* seccion dos */
+
+.seccionDos-calidad{
+    @include flex(null, null, center, null);
+    height: 100vh;
+    background-image: url("../img/sep1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    & .div-calidad{
+        @include flex(null, null, center, null);
+        width: 500px;
+        height: 400px;
+        margin-left: 5%;
+        background-color: $bg-100;
+
+        & .div-info-calidad h3{
+            font-size: 2rem;
+            margin: 3rem;
+            text-align: center;
+        }
+
+        & .div-info-calidad p{
+            margin: 3rem;
+            text-align: center;
+        }
+
+        & .div-info-calidad span{
+            color: $accent-200;
+        }
+    }
+}
+
+/*seccion tres*/ 
+
+.seccionTres-servicios{
+    text-align: center;
+
+    & .titulo{
+        font-size: 2rem;
+        padding-top: 5rem;
+    }
 }
