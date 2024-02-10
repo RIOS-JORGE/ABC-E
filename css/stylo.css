@@ -14,7 +14,7 @@
 .header{
     height: 100vh;
     color: #fff;
-    background-image: url("../img/img-header.jpg");
+    background-image: url("../img/img-header.webp");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -140,7 +140,7 @@
 
 .seccionDos-calidad{
     height: 100vh;
-    background-image: url("../img/sep1.jpg");
+    background-image: url("../img/sep1.webp");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
