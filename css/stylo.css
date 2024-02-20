@@ -110,7 +110,7 @@
     width: 500px;
 }
 
-.div-contenedor-secionUno{
+.div-contenedor-seccionUno{
     display: flex;
     align-items: center;
 }
@@ -174,7 +174,7 @@
     color: #0450dd;
 }
 
-/* seccion tres */
+/* seccion tres*/
 
 .seccionTres-servicios{
     text-align: center;
@@ -221,7 +221,7 @@
 }
 
 
-/* seccion cuatro */
+/* seccion cuatro  */
 
 .seccionCuatro-proyectos{
     background-color: #f4f5f1;

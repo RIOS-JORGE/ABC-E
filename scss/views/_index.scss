@@ -84,7 +84,7 @@
             width: 500px;
 
             & .div-contenedor-seccionUno{
-                @include flex(null, space-around, center, null);
+                @include flex(null, null, center, null);
 
                 & .div-span span{
                     font-size: 2rem;
@@ -123,7 +123,6 @@
         @include flex(null, null, center, null);
         width: 500px;
         height: 400px;
-        margin-left: 5%;
         background-color: $bg-100;
 
         & .div-info-calidad h3{
@@ -143,7 +142,7 @@
     }
 }
 
-/*seccion tres*/ 
+/*seccion tres - servicios*/ 
 
 .seccionTres-servicios{
     text-align: center;
@@ -151,5 +150,279 @@
     & .titulo{
         font-size: 2rem;
         padding-top: 5rem;
+    }
+
+    & .enlace{
+        color: $text-200;
+
+        &:hover{
+            color: $primary-200;
+        }
+    }
+
+    & .texto{
+        margin: 5rem auto;
+        padding: 1rem;
+        width: 50%;
+        box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
+    }
+
+    & .div-servicios{
+        @include flex(null, space-around, stretch, wrap);
+        padding: 5rem 0;
+
+        & div{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1rem;
+            box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
+            padding: .5rem;
+
+            & h3{
+                margin: .5rem 0;
+            }
+        }
+    }
+}
+
+/*seccion cuatro - proyectos*/
+
+.seccionCuatro-proyectos{
+    background-color: $bg-200;
+    text-align: center;
+
+    & .div-grid{
+        display: grid;
+        grid: 
+            "img1 img2 img5 img5"
+            "img3 img2 img5 img5"
+            "img3 img4 img5 img5";
+        gap: .5rem;
+        margin: 1rem;
+
+        & img{
+            width: 100%;
+            box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
+        }
+
+        & .img1{
+            grid-area: img1;
+
+            &:hover{
+                filter:brightness(0.7);
+            }
+        }
+
+        & .img2{
+            grid-area: img2;
+
+            &:hover{
+                filter:brightness(0.7);
+            }
+        }
+
+        & .img3{
+            grid-area: img3;
+
+            &:hover{
+                filter:brightness(0.7);
+            }
+        }
+
+        & .img4{
+            grid-area: img4;
+
+            &:hover{
+                filter:brightness(0.7);
+            }
+        }
+
+        & .img5{
+            grid-area: img5;
+
+            &:hover{
+                filter:brightness(0.7);
+            }
+        }
+    }
+}
+
+/*seccion cinco - clientes*/
+
+.seccionCinco-clientes{
+    text-align: center;
+
+    & .div-logos{
+        @include flex(null, center, null, wrap);
+        gap: 10rem 15rem;
+        width: 80%;
+        margin: auto;
+        padding: 5rem;
+
+        & img{
+            box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
+        }
+    }
+}
+
+/*seccion seis - contactos*/
+
+.mapa{
+    margin: auto;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 100px;
+    right: 5%;
+
+    &:hover{
+        border: $primary-200 5px solid;
+        border-radius: 50%;
+        padding: .5rem;
+    }
+
+    & svg{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+.seccionSeis-contacto{
+    & .div-contactos{
+        width: 50%;
+        margin: auto;
+        border: $primary-200 1px solid;
+        text-align: center;
+        position: relative;
+        top: -130px;
+        background-color: #fff;
+        box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
+        padding: 1rem;
+
+        & h3{
+            font-size: 4rem;
+            color: $primary-200;
+            margin: 1rem;
+        }
+
+        & p{
+            font-size: 1.5rem;
+            color: #333333;
+            margin: 1rem;
+            text-align: justify;
+
+            & span{
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+/*footer*/
+
+footer{
+    background-color: #333333;
+
+    & h3{
+        color: #aaaaaa;
+        padding: 40px;
+        margin-bottom: 0;
+    }
+}
+
+/* medias querys */
+
+@media only screen and (max-width: 960px){
+    .seccionUno{
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 3rem 1rem;
+    }
+
+    .logo{
+        padding: 0;
+    }
+    
+    .texto-header{
+        height: 0;
+    }
+    .texto-header h1{
+        font-size: 2.5rem;
+        margin-top: 15rem;
+    }
+
+    .texto-header h2{
+        display: none;
+    }
+
+
+    /* seccion uno */
+
+    .seccionUno .divABC-E h2{
+        font-size: 6rem;
+    }
+
+    .seccionUno .divABC-E p{
+        font-size: 1.5rem;
+    }
+
+    .seccionUno .seccionUno-descripsion .div-contenedor-seccionUno .div-span{
+        display: none;
+    }
+
+    .seccionUno .seccionUno-descripsion{
+        width: auto;
+    }
+
+    .div-contenedor-seccionUno{
+        padding: 10px;
+    }
+
+    /* seccion dos */
+
+    .div-calidad{
+        margin: 0;
+    }
+
+    .texto{
+        width: auto!important;
+        padding: .5rem;
+        margin: 1rem;
+    }
+    /* seccion cuatro */
+
+    .seccionCuatro-proyectos .div-grid {
+        display: block;
+    }
+
+    .div-grid img{
+        margin-bottom: .5rem;
+    }
+
+    /* seccion cinco */
+
+    .seccionCinco-clientes .div-logos{
+        gap: 2rem;
+        padding: 1rem;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    /* seccion seis */
+
+    .seccionSeis-contacto .div-contactos{
+        width: auto;
+        position: inherit;
+        margin: 1rem;
+    }
+
+    .div-contactos p{
+        font-size: 1rem;
     }
 }

@@ -98,7 +98,6 @@ li {
 }
 .seccionUno .seccionUno-descripsion .div-contenedor-seccionUno {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 .seccionUno .seccionUno-descripsion .div-contenedor-seccionUno .div-span span {
@@ -134,7 +133,6 @@ li {
   align-items: center;
   width: 500px;
   height: 400px;
-  margin-left: 5%;
   background-color: #ffffff;
 }
 .seccionDos-calidad .div-calidad .div-info-calidad h3 {
@@ -150,13 +148,235 @@ li {
   color: #00668c;
 }
 
-/*seccion tres*/
+/*seccion tres - servicios*/
 .seccionTres-servicios {
   text-align: center;
 }
 .seccionTres-servicios .titulo {
   font-size: 2rem;
   padding-top: 5rem;
+}
+.seccionTres-servicios .enlace {
+  color: #313d44;
+}
+.seccionTres-servicios .enlace:hover {
+  color: #6495ed;
+}
+.seccionTres-servicios .texto {
+  margin: 5rem auto;
+  padding: 1rem;
+  width: 50%;
+  box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.3);
+}
+.seccionTres-servicios .div-servicios {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 5rem 0;
+}
+.seccionTres-servicios .div-servicios div {
+  min-width: 300px;
+  max-width: 400px;
+  margin: 1rem;
+  box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+}
+.seccionTres-servicios .div-servicios div h3 {
+  margin: 0.5rem 0;
+}
+
+/*seccion cuatro - proyectos*/
+.seccionCuatro-proyectos {
+  background-color: #f5f4f1;
+  text-align: center;
+}
+.seccionCuatro-proyectos .div-grid {
+  display: grid;
+  grid: "img1 img2 img5 img5" "img3 img2 img5 img5" "img3 img4 img5 img5";
+  gap: 0.5rem;
+  margin: 1rem;
+}
+.seccionCuatro-proyectos .div-grid img {
+  width: 100%;
+  box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.3);
+}
+.seccionCuatro-proyectos .div-grid .img1 {
+  grid-area: img1;
+}
+.seccionCuatro-proyectos .div-grid .img1:hover {
+  filter: brightness(0.7);
+}
+.seccionCuatro-proyectos .div-grid .img2 {
+  grid-area: img2;
+}
+.seccionCuatro-proyectos .div-grid .img2:hover {
+  filter: brightness(0.7);
+}
+.seccionCuatro-proyectos .div-grid .img3 {
+  grid-area: img3;
+}
+.seccionCuatro-proyectos .div-grid .img3:hover {
+  filter: brightness(0.7);
+}
+.seccionCuatro-proyectos .div-grid .img4 {
+  grid-area: img4;
+}
+.seccionCuatro-proyectos .div-grid .img4:hover {
+  filter: brightness(0.7);
+}
+.seccionCuatro-proyectos .div-grid .img5 {
+  grid-area: img5;
+}
+.seccionCuatro-proyectos .div-grid .img5:hover {
+  filter: brightness(0.7);
+}
+
+/*seccion cinco - clientes*/
+.seccionCinco-clientes {
+  text-align: center;
+}
+.seccionCinco-clientes .div-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10rem 15rem;
+  width: 80%;
+  margin: auto;
+  padding: 5rem;
+}
+.seccionCinco-clientes .div-logos img {
+  box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*seccion seis - contactos*/
+.mapa {
+  margin: auto;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 100px;
+  right: 5%;
+}
+.whatsapp:hover {
+  border: #6495ed 5px solid;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.whatsapp svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.seccionSeis-contacto .div-contactos {
+  width: 50%;
+  margin: auto;
+  border: #6495ed 1px solid;
+  text-align: center;
+  position: relative;
+  top: -130px;
+  background-color: #fff;
+  box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+}
+.seccionSeis-contacto .div-contactos h3 {
+  font-size: 4rem;
+  color: #6495ed;
+  margin: 1rem;
+}
+.seccionSeis-contacto .div-contactos p {
+  font-size: 1.5rem;
+  color: #333333;
+  margin: 1rem;
+  text-align: justify;
+}
+.seccionSeis-contacto .div-contactos p span {
+  margin-right: 1rem;
+}
+
+/*footer*/
+footer {
+  background-color: #333333;
+}
+footer h3 {
+  color: #aaaaaa;
+  padding: 40px;
+  margin-bottom: 0;
+}
+
+/* medias querys */
+@media only screen and (max-width: 960px) {
+  .seccionUno {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 3rem 1rem;
+  }
+  .logo {
+    padding: 0;
+  }
+  .texto-header {
+    height: 0;
+  }
+  .texto-header h1 {
+    font-size: 2.5rem;
+    margin-top: 15rem;
+  }
+  .texto-header h2 {
+    display: none;
+  }
+  /* seccion uno */
+  .seccionUno .divABC-E h2 {
+    font-size: 6rem;
+  }
+  .seccionUno .divABC-E p {
+    font-size: 1.5rem;
+  }
+  .seccionUno .seccionUno-descripsion .div-contenedor-seccionUno .div-span {
+    display: none;
+  }
+  .seccionUno .seccionUno-descripsion {
+    width: auto;
+  }
+  .div-contenedor-seccionUno {
+    padding: 10px;
+  }
+  /* seccion dos */
+  .div-calidad {
+    margin: 0;
+  }
+  .texto {
+    width: auto !important;
+    padding: 0.5rem;
+    margin: 1rem;
+  }
+  /* seccion cuatro */
+  .seccionCuatro-proyectos .div-grid {
+    display: block;
+  }
+  .div-grid img {
+    margin-bottom: 0.5rem;
+  }
+  /* seccion cinco */
+  .seccionCinco-clientes .div-logos {
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  /* seccion seis */
+  .seccionSeis-contacto .div-contactos {
+    width: auto;
+    position: inherit;
+    margin: 1rem;
+  }
+  .div-contactos p {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
