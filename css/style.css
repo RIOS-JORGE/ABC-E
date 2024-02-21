@@ -378,5 +378,31 @@ footer h3 {
     font-size: 1rem;
   }
 }
+/*servicios*/
+.contenedor-servicios {
+  display: flex;
+  align-items: center;
+}
+.contenedor-servicios .div-contenedor-servicios {
+  width: 50%;
+  padding: 2rem;
+}
+.contenedor-servicios .div-contenedor-servicios .titulo-contenedor-servicios {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.contenedor-servicios .div-contenedor-servicios .texto-contenedor-servicios {
+  font-size: 1rem;
+  padding: 0.3rem;
+  text-align: justify;
+}
+.contenedor-servicios .div-contenedor-img {
+  padding: 2rem;
+  width: 50%;
+}
+.contenedor-servicios .div-contenedor-img .img-Servicios {
+  width: 70%;
+  box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.9);
+}
 
 /*# sourceMappingURL=style.css.map */
