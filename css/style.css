@@ -152,22 +152,6 @@ li {
 .seccionTres-servicios {
   text-align: center;
 }
-.seccionTres-servicios .titulo {
-  font-size: 2rem;
-  padding-top: 5rem;
-}
-.seccionTres-servicios .enlace {
-  color: #313d44;
-}
-.seccionTres-servicios .enlace:hover {
-  color: #6495ed;
-}
-.seccionTres-servicios .texto {
-  margin: 5rem auto;
-  padding: 1rem;
-  width: 50%;
-  box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.3);
-}
 .seccionTres-servicios .div-servicios {
   display: flex;
   justify-content: space-around;
@@ -184,6 +168,25 @@ li {
 }
 .seccionTres-servicios .div-servicios div h3 {
   margin: 0.5rem 0;
+}
+
+.titulo {
+  font-size: 2rem;
+  padding-top: 5rem;
+}
+
+.enlace {
+  color: #313d44;
+}
+.enlace:hover {
+  color: #6495ed;
+}
+
+.texto {
+  margin: 5rem auto;
+  padding: 1rem;
+  width: 50%;
+  box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.3);
 }
 
 /*seccion cuatro - proyectos*/
@@ -403,6 +406,36 @@ footer h3 {
 .contenedor-servicios .div-contenedor-img .img-Servicios {
   width: 70%;
   box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.9);
+}
+
+/*proyectos */
+.div-contenedor-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.div-contenedor-proyectos .contenedor-proyectos {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1rem auto;
+  background-color: #fff;
+  box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.9);
+}
+.div-contenedor-proyectos .contenedor-proyectos .img-proyecto {
+  width: 100%;
+  height: 60%;
+}
+.div-contenedor-proyectos .contenedor-proyectos .img-proyecto:hover {
+  filter: brightness(0.7);
+}
+.div-contenedor-proyectos .contenedor-proyectos .texto-proyecto {
+  text-align: justify;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.w-100 {
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

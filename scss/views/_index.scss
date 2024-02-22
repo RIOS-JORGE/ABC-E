@@ -147,26 +147,6 @@
 .seccionTres-servicios{
     text-align: center;
 
-    & .titulo{
-        font-size: 2rem;
-        padding-top: 5rem;
-    }
-
-    & .enlace{
-        color: $text-200;
-
-        &:hover{
-            color: $primary-200;
-        }
-    }
-
-    & .texto{
-        margin: 5rem auto;
-        padding: 1rem;
-        width: 50%;
-        box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
-    }
-
     & .div-servicios{
         @include flex(null, space-around, stretch, wrap);
         padding: 5rem 0;
@@ -183,6 +163,26 @@
             }
         }
     }
+}
+
+.titulo{
+    font-size: 2rem;
+    padding-top: 5rem;
+}
+
+.enlace{
+    color: $text-200;
+
+    &:hover{
+        color: $primary-200;
+    }
+}
+
+.texto{
+    margin: 5rem auto;
+    padding: 1rem;
+    width: 50%;
+    box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
 }
 
 /*seccion cuatro - proyectos*/
