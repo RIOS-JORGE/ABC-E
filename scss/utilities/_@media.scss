@@ -19,9 +19,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar{
+    .header .navbar{
         justify-content: space-between;
         padding: 3rem 1rem;
+    }
+
+    .navbar-collapse{
+        margin: 0 2rem;
     }
 
     .logo{
@@ -101,7 +105,8 @@
     }
 
     .div-contactos p{
-        font-size: 1rem;
+        font-size: 1rem!important;
+        margin: 1rem 0!important;
     }
 
     /* html servicios */
@@ -143,7 +148,7 @@
     }
 
     .texto-clientes{
-        width: 90%;
+        width: 90%!important;
         text-align: justify;
         margin: 1rem;
     }

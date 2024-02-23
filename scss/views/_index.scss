@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: myAnim 5s ease 1s forwards;
+    animation: myAnim 5s ease-in-out 0s forwards;
 
     @keyframes myAnim {
         0% {

@@ -26,7 +26,7 @@ li {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: myAnim 5s ease 1s forwards;
+  animation: myAnim 5s ease-in-out 0s forwards;
 }
 @keyframes myAnim {
   0% {
@@ -355,7 +355,7 @@ footer h3 {
   flex-direction: column;
   width: 30%;
   margin: 1rem auto;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.9);
 }
 .div-contenedor-proyectos .contenedor-proyectos .img-proyecto {
@@ -384,7 +384,7 @@ footer h3 {
 }
 .contenedor-clientes .texto-clientes {
   width: 70%;
-  color: #fff;
+  color: #ffffff;
   background-color: #333333;
   padding: 2rem;
   box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.9);
@@ -408,9 +408,12 @@ footer h3 {
   }
 }
 @media only screen and (max-width: 768px) {
-  .navbar {
+  .header .navbar {
     justify-content: space-between;
     padding: 3rem 1rem;
+  }
+  .navbar-collapse {
+    margin: 0 2rem;
   }
   .logo {
     padding: 0;
@@ -470,7 +473,8 @@ footer h3 {
     margin: 1rem;
   }
   .div-contactos p {
-    font-size: 1rem;
+    font-size: 1rem !important;
+    margin: 1rem 0 !important;
   }
   /* html servicios */
   .contenedor-servicios {
@@ -498,7 +502,7 @@ footer h3 {
     margin: 1rem 0;
   }
   .texto-clientes {
-    width: 90%;
+    width: 90% !important;
     text-align: justify;
     margin: 1rem;
   }

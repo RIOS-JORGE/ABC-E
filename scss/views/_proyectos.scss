@@ -7,7 +7,7 @@
         @include flex (column, null, null, null);
         width: 30%;
         margin: 1rem auto;
-        background-color: #fff;
+        background-color: $bg-100;
         box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.9);
 
         & .img-proyecto{
