@@ -384,6 +384,7 @@ footer h3 {
 }
 .contenedor-clientes .texto-clientes {
   width: 70%;
+  text-align: justify;
   color: #ffffff;
   background-color: #333333;
   padding: 2rem;
@@ -491,7 +492,7 @@ footer h3 {
     padding: 1rem;
   }
   /* html proyectos */
-  .contenedor-proyectos {
+  .div-contenedor-proyectos .contenedor-proyectos {
     width: 100%;
     margin: 1rem;
   }
