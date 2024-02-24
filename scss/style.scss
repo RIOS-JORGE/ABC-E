@@ -1,0 +1,24 @@
+@import "./utilities/variables";
+@import "./base/reset";
+@import "./base/typography";
+@import "./utilities/mixin";
+
+//index.html
+
+@import "./views/index";
+
+// servicios.html
+
+@import "./views/servicios";
+
+// servicios.html
+
+@import "./views/proyectos";
+
+//clientes.html
+
+@import "./views/clientes";
+
+//@media querys
+
+@import "./utilities/@media";
