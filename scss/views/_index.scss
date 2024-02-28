@@ -285,23 +285,6 @@
     margin: auto;
 }
 
-.whatsapp{
-    position: fixed;
-    bottom: 100px;
-    right: 5%;
-
-    &:hover{
-        border: $primary-200 5px solid;
-        border-radius: 50%;
-        padding: .5rem;
-    }
-
-    & svg{
-        width: 4rem;
-        height: 4rem;
-    }
-}
-
 .seccionSeis-contacto{
     & .div-contactos{
         width: 50%;
@@ -336,11 +319,25 @@
 /*footer*/
 
 footer{
+    @include flex(null,center,center,wrap);
     background-color: #333333;
 
     & h3{
         color: #aaaaaa;
         padding: 40px;
         margin-bottom: 0;
+    }
+
+    & .whatsapp{
+    
+        & svg{
+            width: 4rem;
+            height: 4rem;
+        }
+
+        &:hover{
+            width: 4.3rem;
+            height: 4.3rem;
+        }
     }
 }
