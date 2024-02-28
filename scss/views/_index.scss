@@ -1,0 +1,343 @@
+/*header*/ 
+.header{
+    height: 100vh;
+    color: $bg-100;
+    background-image: url("../img/img-header.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: myAnim 5s ease-in-out 0s forwards;
+
+    @keyframes myAnim {
+        0% {
+            background-size: 100%;
+        }
+    
+        100% {
+            background-size: 130%;
+        }
+    }
+
+        & .navbar{
+            @include flex(null, space-around, center, wrap);
+            padding: 3rem 0;
+
+            & .logo{
+                font-size: 3rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                padding-left: 2rem;
+            }
+
+            & ul li a{
+                font-size: 1rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #fff;
+
+                &:hover{
+                    color: #6495ed;
+                }
+            }
+
+            
+        }
+
+        & .texto-header{
+            @include flex(column, space-around, center, null);
+            height: 60%;
+            margin: 1rem;
+
+            & h1{
+                font-size: clamp(1rem, 4vw + 1.25rem, 4rem);
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+            & h2{
+                font-size: 2rem;
+                width: 50%;
+                text-align: center;
+                font-weight: 400;
+
+                &::first-letter{
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                }
+            }
+
+            
+        }
+}
+
+
+
+/* seccion uno */
+
+.seccionUno{
+    @include flex(null, space-around, center, wrap);
+    height: 100vh;
+
+        & .divABC-E{
+            max-width: 1200px;
+
+            & h2{
+                font-size: 9rem;
+                color: $primary-200;
+                text-align: center;
+            }
+
+            & p{
+                font-size: 2rem;
+                text-align: center;
+                color: $primary-200;
+            }
+        }
+
+        & .seccionUno-descripsion{
+            width: 500px;
+
+            & .div-contenedor-seccionUno{
+                @include flex(null, null, center, null);
+
+                & .div-span span{
+                    font-size: 2rem;
+                    border-radius: 150%;
+                    border: solid 3px black;
+                    padding: 1% 10px;
+                    margin: 2rem;
+                }
+
+                & .div-info h3{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    margin: 1rem 0;
+                }
+
+                & .div-info p{
+                    margin: 1rem 0;
+                    font-weight: 300;
+                }
+            }
+        }
+}
+
+/* seccion dos */
+
+.seccionDos-calidad{
+    @include flex(null, null, center, null);
+    height: 100vh;
+    background-image: url("../img/sep1.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    & .div-calidad{
+        @include flex(null, null, center, null);
+        width: 500px;
+        height: 400px;
+        background-color: $bg-100;
+
+        & .div-info-calidad h3{
+            font-size: 2rem;
+            margin: 3rem;
+            text-align: center;
+        }
+
+        & .div-info-calidad p{
+            margin: 3rem;
+            text-align: center;
+        }
+
+        & .div-info-calidad span{
+            color: $accent-200;
+        }
+    }
+}
+
+/*seccion tres - servicios*/ 
+
+.seccionTres-servicios{
+    text-align: center;
+
+    & .div-servicios{
+        @include flex(null, space-around, stretch, wrap);
+        padding: 5rem 0;
+
+        & div{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1rem;
+            box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
+            padding: .5rem;
+
+            & h3{
+                margin: .5rem 0;
+            }
+        }
+    }
+}
+
+.titulo{
+    font-size: 2rem;
+    padding-top: 5rem;
+}
+
+.enlace{
+    color: $text-200;
+
+    &:hover{
+        color: $primary-200;
+    }
+}
+
+.texto{
+    margin: 5rem auto;
+    padding: 1rem;
+    width: 50%;
+    box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
+}
+
+/*seccion cuatro - proyectos*/
+
+.seccionCuatro-proyectos{
+    background-color: $bg-200;
+    text-align: center;
+
+    & .div-grid{
+        display: grid;
+        grid: 
+            "img1 img2 img5 img5"
+            "img3 img2 img5 img5"
+            "img3 img4 img5 img5";
+        gap: .5rem;
+        margin: 1rem;
+
+        & img{
+            width: 100%;
+            box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
+        }
+
+        & .img1{
+            grid-area: img1;
+
+            &:hover{
+                filter:brightness(0.7);
+            }
+        }
+
+        & .img2{
+            grid-area: img2;
+
+            &:hover{
+                filter:brightness(0.7);
+            }
+        }
+
+        & .img3{
+            grid-area: img3;
+
+            &:hover{
+                filter:brightness(0.7);
+            }
+        }
+
+        & .img4{
+            grid-area: img4;
+
+            &:hover{
+                filter:brightness(0.7);
+            }
+        }
+
+        & .img5{
+            grid-area: img5;
+
+            &:hover{
+                filter:brightness(0.7);
+            }
+        }
+    }
+}
+
+/*seccion cinco - clientes*/
+
+.seccionCinco-clientes{
+    text-align: center;
+
+    & .div-logos{
+        @include flex(null, center, null, wrap);
+        gap: 10rem 15rem;
+        width: 80%;
+        margin: auto;
+        padding: 5rem;
+
+        & img{
+            box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
+        }
+    }
+}
+
+/*seccion seis - contactos*/
+
+.mapa{
+    margin: auto;
+}
+
+.seccionSeis-contacto{
+    & .div-contactos{
+        width: 50%;
+        margin: auto;
+        border: $primary-200 1px solid;
+        text-align: center;
+        position: relative;
+        top: -130px;
+        background-color: #fff;
+        box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
+        padding: 1rem;
+
+        & h3{
+            font-size: 4rem;
+            color: $primary-200;
+            margin: 1rem;
+        }
+
+        & p{
+            font-size: 1.5rem;
+            color: #333333;
+            margin: 1rem;
+            text-align: justify;
+
+            & span{
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+/*footer*/
+
+footer{
+    @include flex(null,center,center,wrap);
+    background-color: #333333;
+
+    & h3{
+        color: #aaaaaa;
+        padding: 40px;
+        margin-bottom: 0;
+    }
+
+    & .whatsapp{
+    
+        & svg{
+            width: 4rem;
+            height: 4rem;
+        }
+
+        &:hover{
+            width: 4.3rem;
+            height: 4.3rem;
+        }
+    }
+}
