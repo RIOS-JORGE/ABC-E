@@ -71,13 +71,13 @@ li {
   text-align: center;
   text-transform: capitalize;
 }
-.header .texto-header h2 {
+.header .texto-header p {
   font-size: 2rem;
   width: 50%;
   text-align: center;
   font-weight: 400;
 }
-.header .texto-header h2::first-letter {
+.header .texto-header p::first-letter {
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -117,7 +117,7 @@ li {
   padding: 1% 10px;
   margin: 2rem;
 }
-.seccionUno .seccionUno-descripsion .div-contenedor-seccionUno .div-info h3 {
+.seccionUno .seccionUno-descripsion .div-contenedor-seccionUno .div-info span {
   font-size: 1rem;
   font-weight: 500;
   text-transform: capitalize;
@@ -176,12 +176,14 @@ li {
   box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.3);
   padding: 0.5rem;
 }
-.seccionTres-servicios .div-servicios div h3 {
+.seccionTres-servicios .div-servicios div span {
+  font-size: calc(1.3rem + 0.6vw);
   margin: 0.5rem 0;
 }
 
 .titulo {
   font-size: 2rem;
+  display: block;
   padding-top: 5rem;
 }
 
@@ -278,7 +280,7 @@ li {
   box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.3);
   padding: 1rem;
 }
-.seccionSeis-contacto .div-contactos h3 {
+.seccionSeis-contacto .div-contactos h4 {
   font-size: 4rem;
   color: #6495ed;
   margin: 1rem;
@@ -422,7 +424,7 @@ footer .whatsapp:hover {
   .texto-header h1 {
     font-size: 2.5rem;
   }
-  .texto-header h2 {
+  .texto-header p {
     display: none;
   }
   /* seccion uno */
