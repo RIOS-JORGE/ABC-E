@@ -16,6 +16,10 @@
     .seccionUno{
         height: 100%;
     }
+
+    .div-contenedor-proyectos .contenedor-proyectos{
+        width: 40%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -39,7 +43,7 @@
         font-size: 2.5rem;
     }
 
-    .texto-header h2{
+    .texto-header p{
         display: none;
     }
 
@@ -60,6 +64,8 @@
 
     .seccionUno .seccionUno-descripsion{
         width: auto;
+        margin: 2rem;
+        text-align: justify;
     }
 
     .div-contenedor-seccionUno{
@@ -72,11 +78,21 @@
         margin: 0;
     }
 
+    .seccionDos-calidad .div-calidad{
+        margin: auto;
+    }
+
     .texto{
         width: auto;
         padding: .5rem;
         margin: 1rem;
     }
+    /* seccion tres */
+
+    .seccionTres-servicios .div-servicios div{
+        max-width: inherit;
+    }
+
     /* seccion cuatro */
 
     .seccionCuatro-proyectos .div-grid {
