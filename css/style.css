@@ -58,6 +58,14 @@ li {
 .header .navbar ul li a:hover {
   color: #6495ed;
 }
+.header .active {
+  width: 100%;
+  padding: 0;
+  position: fixed;
+  background-color: #000000;
+  z-index: 1;
+  top: 0;
+}
 .header .texto-header {
   display: flex;
   flex-direction: column;
@@ -523,7 +531,7 @@ footer .whatsapp:hover {
 @media only screen and (max-width: 768px) {
   .header .navbar {
     justify-content: space-between;
-    padding: 3rem 1rem;
+    padding: 0 1rem;
   }
   .navbar-collapse {
     margin: 0 2rem;

@@ -43,6 +43,15 @@
             
         }
 
+        & .active{
+            width: 100%;
+            padding: 0;
+            position: fixed;
+            background-color: #000000;
+            z-index: 1;
+            top: 0;
+          }
+
         & .texto-header{
             @include flex(column, space-around, center, null);
             height: 60%;
@@ -69,7 +78,6 @@
             
         }
 }
-
 
 
 /* seccion uno */
